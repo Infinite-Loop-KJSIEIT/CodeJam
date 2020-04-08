@@ -1,0 +1,14 @@
+We try to maximize the total percentage 
+Program steps 
+1. sort the input array a[] in descending order with: 
+ remain value, which is the decimal value if a[i]*100/N 
+ N being the total number of people 
+2. Skip all the languages which have more that “0.5” value in the remain 
+ Ex: these languages will be rounded off to the next integer, and it takes more votes to change its value such that it’s 
+     rounded off to the next integer 
+3. Add votes to languages which have less than “0.5” value in the remain until it is >=.05 
+ note: as the array is sorted, we first vote languages which require less votes so that the percentage is rounded off to the 
+  next integer 
+4. vote for new languages if there are still people left to vote after traversing the array 
+ Ex: it takes fewer votes to make the percentage change of a new language than voting for existing language 
+  whose remain value is more that “0.5”
