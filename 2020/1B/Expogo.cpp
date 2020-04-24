@@ -19,7 +19,6 @@ Our method has a running time which is logarithmic in the magnitudes of the coor
 
 // SOURCE CODE
 
-
 #include <bits/stdc++.h>
 
 using namespace std;
